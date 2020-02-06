@@ -36,7 +36,7 @@ async function getPicture(picture_id) {
 }
 
 async function start() {
-	const pictures = await listPictures({ benchsteptype: 40, smalltext: smalltext })
+	const pictures = await listPictures({ benchsteptype: 40, smalltext: smalltext, bench_root_id: 8 })
 	const picture = _.first(pictures)
 
 	if (!picture) {

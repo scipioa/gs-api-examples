@@ -132,10 +132,14 @@ async function _listImages() {
 }
 
 async function start() {
-	const productions = await listProductions()
+	let productions = await listProductions()
+	productions = productions.reverse()
+
 	const production = _.find(productions, benches => {
 		return _.find(benches, bench => _.startsWith(bench.smalltext, "LOT "))
 	})
+
+	console.log("Production found:", production)
 
 	const images = await _listImages()
 	const bench = _.find(production, bench => bench.benchsteptype === 10)

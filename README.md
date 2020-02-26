@@ -1,6 +1,6 @@
 # gs-api-examples
 
-Examples to upload and download using GS-api
+Examples to upload and download images using the Grand Shooting API
 
 ## Installation
 Get an API key here: https://account.grand-shooting.com/team-management/api#apikeys
